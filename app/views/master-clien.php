@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="<?= CSS_URL ?>/bootstrap.css">
+    <link rel="stylesheet" href="<?= CSS_URL ?>/bootstrap-grid.css">
+    <link rel="stylesheet" href="<?= CSS_URL ?>/bootstrap-reboot.css">
+    <link rel="stylesheet" href="<?= CSS_URL ?>/bootstrap-utilities.css">
+    <link rel="stylesheet" href="<?= CSS_URL ?>/flexslider.css">
+    <link rel="stylesheet" href="<?= CSS_URL ?>/font-awesome.min.css">
+    <link rel="stylesheet" href="<?= CSS_URL ?>/sequence-looptheme.css">
+    <link rel="stylesheet" href="<?= CSS_URL ?>/main.css">
+    <link rel="stylesheet" href="<?= CSS_URL ?>/my-style.css">
+    <link rel="stylesheet" href="<?= CSS_URL ?>/style.css">
+    <link rel="stylesheet" href="<?= CSS_URL ?>/util.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+</head>
+
+<body>
+<?php
+    require_once "./app/views/clien/header.php";
+    require_once "./app/views/clien/pages/".$data['page'].".php";
+    require_once "./app/views/clien/footer.php";
+?>
